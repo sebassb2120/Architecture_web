@@ -1,0 +1,92 @@
+footer{
+    background: rgba(0, 0, 0, 0.897);
+    margin-top: 7rem;
+    padding-top: 7rem;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+    gap: 6rem;
+    
+}
+
+.footer_container article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.texto{
+    margin-top: 1rem;
+    margin-left: -90px;
+}
+
+.footer_container article h4{
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.footer_socials{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer_socials a{
+    background: black;
+    padding: 0.8rem;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    transition:all 400ms ease ;
+    margin-left: -10px;
+}
+
+.footer_socials a:hover{
+    border-color: aqua;
+    background: transparent;
+
+}
+
+.footer_copyright{
+    color: gray;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid ;
+    margin-top: 5rem;
+}
+
+.logos{
+    width:15rem;
+    height: 15rem;
+    display:block;
+}
+
+/* ================== MEDIA QUERIS (MEDIUM DEVICES) ===============*/
+
+@media screen and (max-width: 1024px){
+    footer{
+        margin-top: 7rem;
+    }
+
+    .footer_container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer_container article{
+        align-items: center;
+    }
+
+    .footer_container article p{
+        text-align: center;
+    }
+
+    .logos{
+        justify-content: center;
+    }
+}

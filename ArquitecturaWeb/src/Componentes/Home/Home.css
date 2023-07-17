@@ -1,0 +1,247 @@
+.main_header{
+    width: 100vw;
+    height: calc(100vh-3rem);
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+.main_header-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.main_header-left{
+    margin-top: -3rem;
+}
+
+.main_header-left h4{
+    margin-bottom: 1rem;
+    color: yellow;
+    font-weight: 400;
+}
+
+.main_header-left p{
+    margin: 1rem 0 3.5rem;
+    font-size: 1.1rem;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    height: 400px ;
+}
+
+.btn{
+    width:fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    background: yellow;
+    border-radius: 1.5rem;
+    transition: all 400ms ease;
+}
+
+.btn:hover{
+    background:aquamarine;
+}
+
+.main_header-right{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.main_header-circle{
+    width: 25rem;
+    height: 25rem;
+    background: linear-gradient(75deg, yellow, transparent);
+    border-radius: 50%;
+    position:static;
+    filter: blur(15px);
+}
+
+.main_header-image{
+    position: relative;
+}
+
+
+
+/*_-------------------------- mini muestra img serivicio -------------------------*/
+
+.images{
+    gap: 2.5rem;
+    height: 30rem;
+    place-items: center;
+}
+
+.imagen{
+    padding: 6rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    height: 30rem;
+}
+
+
+
+
+/*------------------- little about --------------------*/
+
+.little_about_container{
+    display: grid;
+    grid-template-columns: 50% 30%;
+    gap: 10%;
+}
+
+.littleabout{
+    width: 100%;
+    aspect-ratio: -1/1;
+    border-radius: 6rem;
+    background: linear-gradient(
+        55deg,
+        transparent,
+        rgba(255, 255, 0, 0.767),
+        transparent
+    );
+    display:grid;
+    place-items:center;
+}
+
+.littleabout_img{
+    border-radius: 2rem;
+    overflow:hidden;
+    transform: rotate(10deg);
+    transition: 0.5s;
+}
+
+.littleabout_img:hover{
+    transform: rotate(0);
+    transition: 0.5s;
+}
+
+.littleabout_content p{
+    margin: 4rem  2.6rem;
+    color: var(--color-light);
+}
+
+h1{
+    text-align: center;
+}
+
+/*-------------------- botones de contacto ---------------------*/
+
+.contact_containers{
+    height: 10rem;
+    display: grid;
+    place-items: center;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contact_wrapper{
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact_wrapper a{
+    background: rgba(38, 41, 44, 0.562);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: all 400ms ease;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.contact_wrapper a:hover{
+    background: transparent;
+    border-color: rgb(11, 12, 12);
+}
+
+/* ================== MEDIA QUERIS (MEDIUM DEVICES) ===============*/
+
+@media screen and (max-width: 1024px){
+    .main_header{
+        height: fit-content;
+        padding: 12rem 0;
+
+    }
+
+    .main_header-container{
+        gap: 0;
+    }
+
+    .main_header-circle{
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .main_header-img{
+        width: 15rem ;
+        height: 15rem;
+    }
+
+    /* litlle services */
+
+    .images{
+        grid-template-columns: 1fr 1fr;
+        height: 70%;
+        width: 80%;
+        padding:20px;
+    }
+
+
+    /* lityle about */
+
+    .little_about_container{
+      grid-template-columns: 1fr;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .littleabout_img{
+      grid-template-columns: 1fr;
+      width: 20rem;
+    }
+  
+    .littleabout{
+      grid-template-columns: 1fr ;
+      margin: 2rem auto 4rem;
+      width: 20rem;
+      height: 25rem;
+    }
+  
+    .littleabout_content p{
+        margin: 1rem auto 4rem;
+        width: 150px;
+        height: 100%;
+        text-align: center;
+
+    }
+
+    /* contact*/
+
+    .contact_wrapper{
+        gap: 1.5rem;
+    }
+    
+    .contact_wrapper a{
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+    }
+  }
+  
+  /* ================== MEDIA QUERIS (small DEVICES) ===============*/
+  

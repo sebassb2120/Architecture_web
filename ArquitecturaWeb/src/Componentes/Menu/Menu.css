@@ -1,0 +1,38 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    background: black;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-fluid{
+    background: black;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width: 20px;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.navbar-nav a{
+    transition: all 400ms ease;
+}
+
+.navbar-nav a:hover{
+    color: rgba(77,181,255,0.4);
+}
